@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA</title>
+    <link rel="stylesheet" href="./static/css/output.css">
+</head>
+<body class="flex gap-5">
+    <nav class="bg-black text-white h-[100vh] w-52 p-4 flex items-start justify-between text-2xl " >
+        <ul class="flex flex-col items-center text-justify justify-between w-52 gap-5">
+            <a href="/" class="nav__link  w-full" data-link>Dashboard</a>   
+            <a href="/posts" class="nav__link w-full" data-link>Posts</a>
+            <a href="/settings" class="nav__link  w-full" data-link>Settings</a>
+        </ul>
+    </nav>
+    <div id="app"></div>
+</body>
+<script type="module" src="./static/js/index.js" ></script>
+</html>

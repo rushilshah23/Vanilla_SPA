@@ -1,0 +1,15 @@
+{
+  "name": "spa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "buildcss":"npx tailwindcss -i ./app/frontend/static/css/input.css -o ./app/frontend/static/css/output.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
+  }
+}
