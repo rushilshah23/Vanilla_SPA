@@ -14,6 +14,9 @@ export default  class extends AbstractView{
             <a href="/posts" data-link>View all posts</a>
         `
     }
+
+
+
 }
 
 

@@ -6,6 +6,9 @@ export default class {
 
     }
 
+
+
+
     setTitle(title){
         document.title = title
     }
@@ -13,5 +16,17 @@ export default class {
     async getHTML(){
     
         return '';
+    }
+
+    // After rendering the HTML, bind events
+    bindEvents() {
+        
+    }
+
+    // Initialize the view and bind events
+    async init() {
+        const html = await this.getHTML();
+        document.querySelector("#app").innerHTML = html;
+        this.bindEvents();
     }
 }

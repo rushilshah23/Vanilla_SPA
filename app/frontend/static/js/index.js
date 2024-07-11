@@ -67,7 +67,9 @@ const router = async () => {
     }
 
     const view = new match.route.view(getParams(match));
-    document.querySelector("#app").innerHTML = await view.getHTML();
+    await view.init();
+
+    // document.querySelector("#app").innerHTML = await view.getHTML();
 }
 
 // When DOM loaded run the router and add event listener to any click of any element and as per navigateTo.Whenever element generally a tag having data-link tag is clicked instead of redirecting to href refreshing it.
